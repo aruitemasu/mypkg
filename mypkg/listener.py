@@ -1,17 +1,26 @@
 #!/usr/bin/pathon3
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Int16
-
+from std_msgs.msg import String
 
 rclpy.init()
-node = Node("listener")
+node = Node("tax_listener")
 
 
 def cb(msg):
-    global node
-    node.get_logger().info("Listen: %d" % msg.data)
+    data = msg.data.split(":")
+    year = int(data[0])
+    rate = int(data[1])
+    note = data[2]
+    if "増税" in note:
+        node.get_logger().info(f"{year}年に消費税が{rate}%に上がりました（{note}）。")
+    elif "そのまま" in note:
+        node.get_logger().info(f"{year}年は消費税が{rate}%のままです。")
+    else:
+        node.get_logger().info(f"{year}年に消費税が{rate}%になりました（{note}）。")
+
 
 def main():
-    pub = node.create_subscription(Int16, "countup", cb, 10)
+    node.create_subscription(String, "tax_info", cb, 10)
     rclpy.spin(node)
+
