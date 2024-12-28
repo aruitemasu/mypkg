@@ -7,7 +7,7 @@ rclpy.init()
 node = Node("tax_talker")
 pub = node.create_publisher(String, "tax_info", 10)
 
-# 消費税が変わった年と税率
+# 消費税率が変わった年と税率
 tax_changes = [
     {"year": 1989, "rate": 3, "note": "消費税導入"},
     {"year": 1997, "rate": 5, "note": "初の増税"},
@@ -17,7 +17,7 @@ tax_changes = [
 
 #データ生成用
 current_rate = 0
-current_year = tax_changes[0]["year"] # 開始の年
+current_year = tax_changes[0]["year"]  # 開始年
 index = 0
 
 def get_tax_data(year):
