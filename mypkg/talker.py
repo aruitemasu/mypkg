@@ -15,7 +15,7 @@ tax_changes = [
     {"year": 2019, "rate": 10, "note": "三度目の増税"}
 ]
 
-#データ生成用
+# データ生成用
 current_rate = 0
 current_year = tax_changes[0]["year"]  # 開始年
 index = 0

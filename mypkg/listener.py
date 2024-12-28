@@ -23,4 +23,3 @@ def cb(msg):
 def main():
     node.create_subscription(String, "tax_info", cb, 10)
     rclpy.spin(node)
-
