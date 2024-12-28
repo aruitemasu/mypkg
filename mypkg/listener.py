@@ -4,7 +4,7 @@ from rclpy.node import Node
 from std_msgs.msg import String
 
 rclpy.init()
-node = Node("tax_listener")
+node = Node("tax_litener")
 
 
 def cb(msg):
