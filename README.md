@@ -1,26 +1,24 @@
-# 日本の税金の歴史
+# 日本の税金の歴史コマンド
 [![test](https://github.com/aruitemasu/ros2/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/aruitemasu/ros2/actions/workflows/test.yml)
 
 このリポジトリは、ros2を使って日本の税金の歴史についてのプログラムになります。
 
 # 機能
 
-- 
-- 
-- 
+- ```zeikinn.py```を実行したら次に違うタブで```rekishi.py```を実行します。
+- 両方実行したら、パブリッシャがトピックに情報を出します。
+- test.bashで実行したら一緒にパブリッシャが出てくる。
 
 # 必要なソフトウェア
 
-- python
-
-  - 
+- python3
 
 # テスト環境
 -Ubuntu 20.04 LST
 
 # ファイルの構成
-- ```listener.py```:
-- ```talker.py```:
+- ```zeikinn.py```:
+- ```rekishi.py```:
 - ```test.bash```:
 
 # 導入方法
