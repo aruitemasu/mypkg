@@ -5,23 +5,23 @@
 
 # 機能
 
--
--
--
+- 
+- 
+- 
 
 # 必要なソフトウェア
 
--python
+- python
 
-  -
+  - 
 
 # テスト環境
 -Ubuntu 20.04 LST
 
 # ファイルの構成
--```listener.py```:
--```talker.py```:
--```test.bash```:
+- ```listener.py```:
+- ```talker.py```:
+- ```test.bash```:
 
 # 導入方法
 - 1.このリポジトリをクローンします。
