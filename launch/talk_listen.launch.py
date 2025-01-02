@@ -10,10 +10,10 @@ def generate_launch_description():
         package='mypkg',
         executable='zeikinn',
         )
-    listener = launch_ros.actions.Node(
+    rekishi = launch_ros.actions.Node(
         package='mypkg',
-        executable='listener',
+        executable='rekishi',
         output='screen'
         )
 
-    return launch.LaunchDescription([zeikinn, listener])
+    return launch.LaunchDescription([zeikinn, rekishi])

@@ -24,7 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'zeikinn = mypkg.zeikinn:main',
-            'listener = mypkg.listener:main',
+            'rekishi = mypkg.rekishi:main',
         ],
     },
 )
