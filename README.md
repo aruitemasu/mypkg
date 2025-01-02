@@ -58,3 +58,4 @@ cd ros_ws/src/mypkg/test
 このソフトウェアパッケージは3条項BSDライセンスの下、最頒布および使用が許可されています。
 
 © 2024 Katsumi Sunahara
+
