@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'zeikinn = mypkg.talker:main',
+            'zeikinn = mypkg.zeikinn:main',
             'listener = mypkg.listener:main',
         ],
     },

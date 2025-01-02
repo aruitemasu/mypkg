@@ -6,7 +6,7 @@ import launch_ros.actions
 
 def generate_launch_description():
 
-    talker = launch_ros.actions.Node(
+    zeikinn = launch_ros.actions.Node(
         package='mypkg',
         executable='zeikinn',
         )
@@ -16,4 +16,4 @@ def generate_launch_description():
         output='screen'
         )
 
-    return launch.LaunchDescription([talker, listener])
+    return launch.LaunchDescription([zeikinn, listener])
