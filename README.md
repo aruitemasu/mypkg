@@ -1,26 +1,26 @@
 # 日本の税金の歴史コマンド
 [![test](https://github.com/aruitemasu/ros2/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/aruitemasu/ros2/actions/workflows/test.yml)
 
-このリポジトリは、ros2を使って日本の税金の歴史についてのプログラムになります。
+このリポジトリは、ros2を使って日本の税金の歴史についてパブリッシュします。0.5秒ごとに税金が始まってから１年ずつ経過していき、税金が上がったタイミングを教えてくれます。
 
 # 機能
 
 - ```zeikinn.py```を実行したら次に違う端末で```rekishi.py```を実行します。
-- 両方実行したら、日本の税金の歴史についてパブリッシャがトピックに情報を出します。
-- ```./test.bash```で実行したら勝手にcolcon biuld され一緒にパブリッシャがトピックに情報を出します。
+- 両方実行したら、日本の税金の歴史についてパブリッシュがトピックに情報を出します。
+- ```./test.bash```で実行したら勝手にcolcon build され一緒にパブリッシュがトピックに情報を出します。
 
 # 必要なソフトウェア
 
-- Python3.8以上
+- Python　3.8以上
 - ROS 2
 
 # テスト環境
 - Ubuntu 20.04 LST
 
 # ファイルの構成
-- ```zeikinn.py```:実行したらパブリッシャのトピック情報が動き出すスクリプト
-- ```rekishi.py```:```zeikinn.py```を実行したらパブリッシャのトピック情報が動き出すスクリプト
-- ```test.bash```:```zeikinn.py```と```rekishi.py```のパブリッシャを一緒にトピックに出し、動作確認をするテスト用のスクリプト
+- ```zeikinn.py```:実行したらパブリッシュしたトピック情報が動き出すスクリプト
+- ```rekishi.py```:このノードは、テスト用であり実行したら```zeikinn.py```の日本の税金の歴史についての情報を受け取たことを確認するためのスクリプト
+- ```test.bash```:```zeikinn.py```と```rekishi.py```のパブリッシュを一緒にトピックに出し、動作確認をするテスト用のスクリプト
 
 # 導入方法
 - 1.このリポジトリをクローンします。
@@ -62,7 +62,7 @@ ros2 run mypkg <スクリプト名>
 
 ```
 cd ros2_ws
-ros2 run mypkg rekishi.py
+ros2 run mypkg rekishi
 ###実行結果###
 
 ###実行結果(zeikinn.py)を実行した後###
@@ -77,7 +77,7 @@ ros2 run mypkg rekishi.py
 
 ```
 cd ros2_ws
-ros2 run mypkg zeikinn.py
+ros2 run mypkg zeikinn
 ###実行結果###
 [INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
 [INFO] [1735887671.011828304] [tax_talker]: Published tax info: 1990:3:そのままです。
@@ -88,7 +88,7 @@ ros2 run mypkg zeikinn.py
 
 - 入力方法2
 
-```cd ros2_ws/src/mypkg/test```のデイレクトリに移動してから```./test.bash```を使って直接実行し```rekishi.py```と```zeikinn.py```の両方のパブリッシャのトピック情報のノードが出てきます。
+```cd ros2_ws/src/mypkg/test```のデイレクトリに移動してから```./test.bash```を使って直接実行し```rekishi.py```と```zeikinn.py```の両方のパブリッシュのトピック情報のノードが出てきます。
 
 例
 
