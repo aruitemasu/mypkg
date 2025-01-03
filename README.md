@@ -6,8 +6,8 @@
 # 機能
 
 - ```zeikinn.py```を実行したら次に違うタブで```rekishi.py```を実行します。
-- 両方実行したら、パブリッシャがトピックに情報を出します。
-- ```./test.bash```で実行したら勝手にcolcon biuld され一緒にパブリッシャのトピックが出てきます。
+- 両方実行したら、日本の税金の歴史についてパブリッシャがトピックに情報を出します。
+- ```./test.bash```で実行したら勝手にcolcon biuld され一緒にパブリッシャがトピックに情報を出します。
 
 # 必要なソフトウェア
 
@@ -28,7 +28,7 @@
 git clone https://github.com/aruitemasu/ros2
 ```
 
-- 2.```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違うタブで```zeikinn.py```を実行してください。
+- 2.この```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違うタブで```zeikinn.py```を実行してください。
 
 ```
 cd ros_ws
@@ -87,12 +87,12 @@ ros2 run mypkg zeikinn.py
 
 - 入力方法2
 
-```./test.bash```を使って直接実行しros2スクリプトを使用して日本の税金の歴史についてのノードが出てきます。
+```cd ros2_ws/src/mypkg/test```のデイレクトリに移動してから```./test.bash```を使って直接実行し```rekishi.py```と```zeikinn.py```の両方のパブリッシャのトピック情報のノードが出てきます。
 
 例
 
 ```
-cd ros_ws/src/mypkg/test
+cd ros2_ws/src/mypkg/test
 ./test.bash
 ###実行結果###
 [rekishi-2] [INFO] [1735886587.475792804] [tax_listener]: 1989に消費税が3%になりました(消費税導入)。
