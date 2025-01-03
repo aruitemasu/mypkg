@@ -1,4 +1,4 @@
-# 日本の税金の歴史コマンドhttps://github.com/aruitemasu/ros2
+# 日本の税金の歴史コマンド
 [![test](https://github.com/aruitemasu/ros2/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/aruitemasu/ros2/actions/workflows/test.yml)
 
 このリポジトリは、ros2を使って日本の税金の歴史についてのプログラムになります。
