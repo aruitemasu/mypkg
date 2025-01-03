@@ -1,17 +1,18 @@
-# 日本の税金の歴史コマンド
+# 日本の税金の歴史コマンドhttps://github.com/aruitemasu/ros2
 [![test](https://github.com/aruitemasu/ros2/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/aruitemasu/ros2/actions/workflows/test.yml)
 
 このリポジトリは、ros2を使って日本の税金の歴史についてのプログラムになります。
 
 # 機能
 
-- ```zeikinn.py```を実行したら次に違うタブで```rekishi.py```を実行します。
+- ```zeikinn.py```を実行したら次に違う端末で```rekishi.py```を実行します。
 - 両方実行したら、日本の税金の歴史についてパブリッシャがトピックに情報を出します。
 - ```./test.bash```で実行したら勝手にcolcon biuld され一緒にパブリッシャがトピックに情報を出します。
 
 # 必要なソフトウェア
 
-- python3
+- Python3.8以上
+- ROS 2
 
 # テスト環境
 - Ubuntu 20.04 LST
@@ -28,13 +29,13 @@
 git clone https://github.com/aruitemasu/ros2
 ```
 
-- 2.この```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違うタブで```zeikinn.py```を実行してください。
+- 2.この```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違う端末で```zeikinn.py```を実行してください。
 
 ```
 cd ros_ws
 ros2 run mypkg rekishi
 ```
-違うタブ
+違う端末
 ```
 cd ros_ws
 ros2 run mypkg zeikinn
@@ -50,7 +51,7 @@ cd ros_ws/src/mypkg/test
 プログラムの動作
 - 入力方法1
 
-```ros2 run mypkg <スクリプト名>```からの実行をして次に違うタブでまた```ros2 run mypkg <スクリプト名>```で日本の税金の歴史についてのノードが出てきます。
+```ros2 run mypkg <スクリプト名>```からの実行をして次に違う端末でまた```ros2 run mypkg <スクリプト名>```で日本の税金の歴史についてのノードが出てきます。
 
 ```
 cd ros2_ws
@@ -72,7 +73,7 @@ ros2 run mypkg rekishi.py
 .
 ```
 
-違うタブ
+違う端末
 
 ```
 cd ros2_ws
