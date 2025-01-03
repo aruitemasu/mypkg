@@ -7,7 +7,7 @@
 
 - ```zeikinn.py```を実行したら次に違うタブで```rekishi.py```を実行します。
 - 両方実行したら、パブリッシャがトピックに情報を出します。
-- ./test.bashで実行したら勝手にcolcon biuld され一緒にパブリッシャのトピックが出てきます。
+- ```./test.bash```で実行したら勝手にcolcon biuld され一緒にパブリッシャのトピックが出てきます。
 
 # 必要なソフトウェア
 
@@ -28,7 +28,7 @@
 git clone https://github.com/aruitemasu/ros2
 ```
 
-- 2.ros2_wsのデイレクトリに移動してからrekishi.pyを実行して違うタブでzeikinn.pyを実行してください。
+- 2.```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違うタブで```zeikinn.py```を実行してください。
 
 ```
 cd ros_ws
@@ -40,7 +40,7 @@ cd ros_ws
 ros2 run mypkg zeikinn
 ```
 
-- 3.別のやり方 ros2_ws/src/mypkg/testのデイレクトリに移動してから./test.bashを実行してください。
+- 3.別のやり方 ```ros2_ws/src/mypkg/test```のデイレクトリに移動してから```./test.bash```を実行してください。
 
 ```
 cd ros_ws/src/mypkg/test
@@ -50,7 +50,7 @@ cd ros_ws/src/mypkg/test
 プログラムの動作
 - 入力方法1
 
-ros2 run mypkg <スクリプト名>からの実行をして次に違うタブでまたros2 run mypkg <スクリプト名>で日本の税金の歴史についてのノードが出てきます。
+```ros2 run mypkg <スクリプト名>```からの実行をして次に違うタブでまた```ros2 run mypkg <スクリプト名>```で日本の税金の歴史についてのノードが出てきます。
 
 ```
 cd ros2_ws
@@ -87,7 +87,7 @@ ros2 run mypkg zeikinn.py
 
 - 入力方法2
 
-./test.bashを使って直接実行しros2スクリプトを使用して日本の税金の歴史についてのノードが出てきます。
+```./test.bash```を使って直接実行しros2スクリプトを使用して日本の税金の歴史についてのノードが出てきます。
 
 例
 
