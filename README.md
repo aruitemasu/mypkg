@@ -1,12 +1,11 @@
 # 日本の税金の歴史
 [![test](https://github.com/aruitemasu/ros2/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/aruitemasu/ros2/actions/workflows/test.yml)
 
-このリポジトリは、ros2を使って日本の税金の歴史についてパブリッシュします。0.5秒ごとに税金が始まってから１年ずつ経過していき、税金が上がったタイミングを教えてくれます。
+ロボットシステム学の課題2で作成したROS2のパッケージです。
 
 # 機能
 
-- ```zeikinn.py```を実行したら次に違う端末で```rekishi.py```を実行します。
-- 両方実行したら、日本の税金の歴史についてパブリッシュがトピックに情報を出します。
+- 日本の税金の歴史について0.5秒ごとに税金が始まってから1年ずつ経過していき、税金が上がったタイミングを教えてくれます。
 
 # 必要なソフトウェア
 
@@ -86,6 +85,7 @@ ros2 run mypkg zeikinn
 ```
 
 - 入力方法2
+
 ```ros2 run mypkg zeikinn```を実行してから次に違い端末で```ros2 topic list```をいれたら3つのリストが出てくるので自分で使ったものを選択し、```ros2 topic echo /tax_info```でデータの実行結果が出てきます。
 
 例
