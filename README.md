@@ -14,7 +14,7 @@
 - ROS 2 foxy
 
 # テスト環境
-- Ubuntu 22.04 LST
+- Ubuntu 22.04.5 LST
 
 # ファイルの構成
 ## zeikinnノード
@@ -80,6 +80,34 @@ ros2 run mypkg zeikinn
 ###実行結果###
 [INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
 [INFO] [1735887671.011828304] [tax_talker]: Published tax info: 1990:3:そのままです。
+.
+.
+.
+```
+
+- 入力方法2
+```ros2 run mypkg zeikinn```を実行してから次に違い端末で```ros2 topic list```をいれたら3つのリストが出てくるので自分で使ったものを選択し、```ros2 topic echo /tax_info```でデータの実行結果が出てきます。
+
+例
+```
+cd ros_ws
+ros2 run mypkg zeikinn
+###実行結果###
+[INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
+[INFO] [1735887671.011828304] [tax_talker]: Published tax info: 1990:3:そのままです。
+.
+.
+.
+```
+違う端末
+```
+cd ros2_ws
+ros2 topic echo /tax_info
+###実行結果###
+data: 1989:3:消費税導入
+---
+data: 1990:3:そのままです。
+---
 .
 .
 .
