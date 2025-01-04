@@ -36,12 +36,12 @@ git clone https://github.com/aruitemasu/ros2
 - 2 この```ros2_ws```のデイレクトリに移動してから```rekishi.py```を実行して違う端末で```zeikinn.py```を実行してください。
 
 ```
-cd ros_ws
+cd ros2_ws
 ros2 run mypkg rekishi
 ```
 違う端末
 ```
-cd ros_ws
+cd ros2_ws
 ros2 run mypkg zeikinn
 ```
 
@@ -90,7 +90,7 @@ ros2 run mypkg zeikinn
 
 例
 ```
-cd ros_ws
+cd ros2_ws
 ros2 run mypkg zeikinn
 ###実行結果###
 [INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
