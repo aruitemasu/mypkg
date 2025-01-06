@@ -36,11 +36,8 @@ ros2 run mypkg <スクリプト名>
 例
 
 ```
-cd ros2_ws
 ros2 run mypkg rekishi
-###実行結果###
-
-###実行結果(zeikinn)を実行した後###
+###別のターミナルで```ros2 run mypkg zeikinn```を実行した後###
 [INFO] [1735887670.542955281] [tax_listener]: 1989年に消費税が3%になりました(消費税導入)。
 [INFO] [1735887671.013672370] [tax_listener]: 1990年は消費税が3%のままです。
 .
@@ -48,27 +45,15 @@ ros2 run mypkg rekishi
 .
 ```
 
-別のターミナル
-
-```
-cd ros2_ws
-ros2 run mypkg zeikinn
-###実行結果###
-
-```
-
 - 入力方法2
 
 例
 ```
-cd ros2_ws
 ros2 run mypkg zeikinn
-###実行結果###
 
 ```
 別のターミナル
 ```
-cd ros2_ws
 ros2 topic echo /tax_info
 ###実行結果###
 data: 1989:3:消費税導入
