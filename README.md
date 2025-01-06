@@ -50,7 +50,6 @@ ros2 run mypkg rekishi
 例
 ```
 ros2 run mypkg zeikinn
-
 ```
 別のターミナル
 ```
