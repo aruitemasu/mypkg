@@ -15,27 +15,18 @@
 
 # ファイルの構成
 ## zeikinnノード
-- ```zeikinn```:実行したらパブリッシュしたトピック情報が動き出すノード
+- ```zeikinn```:西暦と税率と消費税の変化についてパブリッシュするノード
 
 ### Published Topics
 - tax_info(std_msgs.msg/String)
-  - 税金が始まった年から税率のパーセントが増税したことや税率がそのままになっていることがわかるデータ
+  - 西暦と税率と消費税の変化
 
 ## rekishiノード(テスト用のノード)
 - ```rekishi```:このノードは、テスト用であり実行したら```zeikinn```の日本の税金の歴史についての情報を受け取たことを確認するためのノード
 
-# 導入方法
-このリポジトリをクローンします。
-
-```
-git clone https://github.com/aruitemasu/ros2
-```
-
 # 使用方法
 
 - 入力方法1
-
-```ros2 run mypkg <スクリプト名>```からの実行をして次に違う端末でまた```ros2 run mypkg <スクリプト名>```で日本の税金の歴史についてのノードが出てきます。
 
 ```
 cd ros2_ws
@@ -57,7 +48,7 @@ ros2 run mypkg rekishi
 .
 ```
 
-違う端末
+別のターミナル
 
 ```
 cd ros2_ws
@@ -72,8 +63,6 @@ ros2 run mypkg zeikinn
 
 - 入力方法2
 
-```ros2 run mypkg zeikinn```を実行してから次に違い端末で```ros2 topic list```をいれたら3つのリストが出てくるので自分で使ったものを選択し、```ros2 topic echo /tax_info```でデータの実行結果が出てきます。
-
 例
 ```
 cd ros2_ws
@@ -85,7 +74,7 @@ ros2 run mypkg zeikinn
 .
 .
 ```
-違う端末
+別のターミナル
 ```
 cd ros2_ws
 ros2 topic echo /tax_info
