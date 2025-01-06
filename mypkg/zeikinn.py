@@ -39,7 +39,7 @@ def cb():
     data = get_tax_data(current_year)
     msg.data = f'{data["year"]}:{data["rate"]}:{data["note"]}'
     pub.publish(msg)
-    node.get_logger().info(f'Published tax info: {msg.data}')
+    #node.get_logger().info(f'Published tax info: {msg.data}')
     current_year += 1  # 次の年に進む
 
 
