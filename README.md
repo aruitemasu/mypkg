@@ -54,11 +54,7 @@ ros2 run mypkg rekishi
 cd ros2_ws
 ros2 run mypkg zeikinn
 ###実行結果###
-[INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
-[INFO] [1735887671.011828304] [tax_talker]: Published tax info: 1990:3:そのままです。
-.
-.
-.
+
 ```
 
 - 入力方法2
@@ -68,11 +64,7 @@ ros2 run mypkg zeikinn
 cd ros2_ws
 ros2 run mypkg zeikinn
 ###実行結果###
-[INFO] [1735887670.543555798] [tax_talker]: Published tax info: 1989:3:消費税導入
-[INFO] [1735887671.011828304] [tax_talker]: Published tax info: 1990:3:そのままです。
-.
-.
-.
+
 ```
 別のターミナル
 ```
@@ -82,6 +74,22 @@ ros2 topic echo /tax_info
 data: 1989:3:消費税導入
 ---
 data: 1990:3:そのままです。
+---
+data: 1991:3:そのままです。
+---
+data: 1992:3:そのままです。
+---
+data: 1993:3:そのままです。
+---
+data: 1994:3:そのままです。
+---
+data: 1995:3:そのままです。
+---
+data: 1996:3:そのままです。
+---
+data: 1997:5:初の導入
+---
+data: 1998:5:そのままです。
 ---
 .
 .
