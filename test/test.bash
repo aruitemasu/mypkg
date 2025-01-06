@@ -1,5 +1,5 @@
 #!/bin/bash
-# SPDX-FilecopyrightText: 2024 Katsumi Sunahara
+# SPDX-FileCopyrightText: 2024 Katsumi Sunahara
 # SPDX-License-Identifier: BSD-3-Clause
 
 dir=~
